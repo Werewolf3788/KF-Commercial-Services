@@ -1,9 +1,9 @@
 BEGIN:VCARD
 VERSION:3.0
-N:Ray;Kevin;;;
-FN:Kevin Ray
+N:;;;;
+FN:KF Commercial Services
 ORG:KF Commercial Services
+X-ABShowAs:COMPANY
 TITLE:Window washing, web design and music
 EMAIL;TYPE=INTERNET,WORK:raykevin71888@proton.me
-NOTE:Window washing, websites, stream overlays, computers and original music
 END:VCARD
