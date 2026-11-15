@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2509348249117288"
+     crossorigin="anonymous"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0C0B82">
+<title>KF Commercial Services Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: signage-style header, one wide column on desktop split into a services rail and a work grid; stacked on phones. */
+/* Brand palette: black ground, blue #0C0B82 for fills, orange #FC4A04 for accents, cream text. Orange and cream carry text; blue is for fills and borders only. */
+:root {
+  --ink: #efece4;
+  --paper: #000000;
+  --panel: #07072c;
+  --line: #1d1cae;
+  --blue: #0C0B82;
+  --glass: #FC4A04;
+  --glass-soft: #2b1006;
+  --signal: #8d8bff;
+  --display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.55; }
+a { color: var(--glass); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--signal); outline-offset: 2px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+html { scroll-padding-top: 72px; }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+.bar { position: sticky; top: 0; z-index: 30; background: var(--blue); border-bottom: 2px solid var(--glass); }
+.bar nav { flex-wrap: nowrap; overflow-x: auto; padding: 10px 0; }
+.bar nav a { white-space: nowrap; }
+header { border-bottom: 4px solid var(--glass); background: var(--paper); }
+.head { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; padding: 28px 0; }
+.logo { height: 72px; width: auto; border-radius: 10px; display: block; }
+.brand { display: flex; align-items: center; gap: 16px; }
+.mark { width: 64px; height: 64px; border: 3px solid var(--ink); border-radius: 14px; display: grid; place-items: center; font-family: var(--display); font-weight: 700; font-size: 34px; letter-spacing: 1px; }
+.brand h1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(30px, 5vw, 46px); line-height: 1; text-transform: uppercase; letter-spacing: 1px; }
+.brand p { margin: 4px 0 0; color: var(--glass); font-weight: 600; }
+nav { display: flex; flex-wrap: wrap; gap: 8px; }
+nav a { text-decoration: none; color: var(--ink); border: 2px solid var(--line); padding: 8px 14px; border-radius: 999px; font-weight: 600; }
+nav a:hover { border-color: var(--glass); color: var(--glass); }
+.bar nav a { color: var(--ink); border-color: rgba(239,236,228,.4); }
+.bar nav a:hover { background: var(--glass); border-color: var(--glass); color: #000; }
+.intro { padding: 40px 0 24px; max-width: 760px; }
+.intro h2 { font-family: var(--display); font-size: clamp(30px, 4.5vw, 44px); line-height: 1.1; margin: 0 0 12px; text-wrap: balance; }
+.intro p { margin: 0; font-size: 19px; }
+section { padding: 28px 0; }
+h3.label { color: var(--glass); font-family: var(--display); font-size: 28px; text-transform: uppercase; letter-spacing: 1px; margin: 0 0 16px; padding-bottom: 8px; border-bottom: 2px solid var(--line); }
+.services { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.svc { background: var(--panel); border: 1px solid var(--line); border-top: 4px solid var(--glass); border-radius: 10px; padding: 18px; }
+.svc h4 { margin: 0 0 6px; font-family: var(--display); font-size: 24px; text-transform: uppercase; letter-spacing: .5px; }
+.svc p { margin: 0; }
+.work { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: flex; flex-direction: column; gap: 10px; }
+.card h4 { margin: 0; font-family: var(--display); font-size: 26px; line-height: 1.1; }
+.card p { margin: 0; flex: 1; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { background: var(--glass-soft); color: var(--glass); font-size: 14px; font-weight: 600; padding: 2px 10px; border-radius: 999px; }
+.links { display: flex; flex-wrap: wrap; gap: 14px; font-weight: 600; }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.slots { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.slot { aspect-ratio: 4 / 3; border: 2px dashed var(--line); border-radius: 10px; display: grid; place-items: center; text-align: center; padding: 10px; color: var(--ink); opacity: .75; font-size: 15px; }
+.music { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+.rel { background: var(--panel); border: 1px solid var(--line); border-left: 6px solid var(--signal); border-radius: 10px; padding: 18px; }
+.rel { display: block; text-decoration: none; color: var(--ink); }
+.rel:hover { border-color: var(--glass); }
+.rel b { font-family: var(--display); font-size: 28px; line-height: 1.1; display: block; }
+.sub { font-family: var(--display); font-size: 22px; text-transform: uppercase; letter-spacing: .5px; margin: 18px 0 10px; }
+.rel span { display: block; margin-top: 4px; }
+.contact { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-wrap: wrap; gap: 16px; align-items: center; justify-content: space-between; }
+.contact p { margin: 0; }
+button { font: inherit; font-weight: 600; background: var(--glass); color: #000; border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer; }
+.cinfo { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; }
+.cbtns { display: flex; flex-wrap: wrap; gap: 10px; }
+button.alt { background: transparent; color: var(--glass); border: 2px solid var(--glass); padding: 8px 16px; }
+.note { font-size: 15px; opacity: .8; }
+.qrbox { text-align: center; font-size: 15px; }
+#qr { background: #fff; padding: 8px; border-radius: 10px; display: inline-block; line-height: 0; }
+#qr img { display: block; width: 176px; height: 176px; max-width: 100%; }
+footer { padding: 28px 0 40px; border-top: 1px solid var(--line); margin-top: 20px; font-size: 15px; }
+@media (max-width: 760px) { .split { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: no-preference) { nav a, button { transition: border-color .15s, color .15s; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <div class="brand">
+      <img class="logo" src="logo.jpg" alt="KF Commercial Services LLC logo" width="79" height="72">
+      <div>
+        <h1>KF Commercial Services</h1>
+        <p>Gainesville, Florida</p>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="bar"><div class="wrap">
+<nav aria-label="Sections">
+      <a href="#services">Services</a>
+      <a href="#web">Web &amp; code</a>
+      <a href="#windows">Windows</a>
+      <a href="#music">Music</a>
+      <a href="#contact">Contact</a>
+    </nav>
+</div></div>
+
+<main class="wrap">
+  <div class="intro">
+    <h2>Clean windows, working computers, custom code and original music.</h2>
+    <p>One local business for storefront glass and for the websites, overlays and tools a small business or creator needs. Everything below is work I have built myself.</p>
+  </div>
+
+  <section id="services">
+    <h3 class="label">What I do</h3>
+    <div class="services">
+      <div class="svc"><h4>Window washing</h4><p>Storefronts, restaurants and strip malls. Ground level and low-rise work, not high-rise.</p></div>
+      <div class="svc"><h4>Websites &amp; HTML</h4><p>Hand-built pages that work on phones and desktops, from a single page to a multi-page portal.</p></div>
+      <div class="svc"><h4>Stream overlays</h4><p>Custom HTML overlays for Twitch and other streams, built to match your channel.</p></div>
+      <div class="svc"><h4>Computers working</h4><p>Setup, cleanup and troubleshooting so your machines do their job.</p></div>
+      <div class="svc"><h4>Original music</h4><p>Songs written, produced and published under my own name.</p></div>
+    </div>
+  </section>
+
+  <section id="web">
+    <h3 class="label">Web &amp; code work</h3>
+    <div class="work">
+      <article class="card">
+        <h4>Clay County community portal</h4>
+        <p>Town pages for Flora, Louisville, Clay City, Sailor Springs and Xenia, with local news, events and business listings. Built for S&amp;K Ventures' community site.</p>
+        <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">News automation</span><span class="tag">Live site</span></div>
+        <div class="links"><a href="https://www.supportmylocalcommunity.com">View live site</a></div>
+      </article>
+      <article class="card">
+        <h4>Werewolf entertainment hub</h4>
+        <p>My own entertainment site: a game companion with friend codes, a subscription and renewal tracker, a social profile and messenger, and a Steam sync.</p>
+        <div class="tags"><span class="tag">Firebase</span><span class="tag">Steam API</span><span class="tag">Responsive</span></div>
+        <div class="links"><a href="https://entertainment-71888.web.app/">View live site</a></div>
+      </article>
+      <article class="card">
+        <h4>Werewolf Cinema</h4>
+        <p>A searchable movie and TV library with posters, details and a library count, running as one page on the same site.</p>
+        <div class="tags"><span class="tag">Search</span><span class="tag">JSON data</span></div>
+        <div class="links"><a href="https://entertainment-71888.web.app/Movies.html">View live page</a></div>
+      </article>
+      <article class="card">
+        <h4>Farming Simulator 25 server dashboard</h4>
+        <p>Live stats for a Farming Simulator 25 dedicated server, with the data refreshed automatically from GitHub.</p>
+        <div class="tags"><span class="tag">GitHub Actions</span><span class="tag">Dashboard</span></div>
+        <div class="links"><a href="https://entertainment-71888.web.app/games/fs25/index.html">View live page</a></div>
+      </article>
+      <article class="card">
+        <h4>Twitch stream overlays</h4>
+        <p>Custom HTML overlays for my own Twitch channel, plus themed pages so each user can get a look of their own.</p>
+        <div class="tags"><span class="tag">Overlay</span><span class="tag">Themes</span></div>
+        <div class="links"><a href="https://entertainment-71888.web.app/overlay/stream.html">View live overlay</a></div>
+      </article>
+      <article class="card">
+        <h4>Browser game hub</h4>
+        <p>Mobile-friendly browser games for friends: Wahoo, Monopoly, Battleship, Frogger and a co-op farm game.</p>
+        <div class="tags"><span class="tag">Multiplayer</span><span class="tag">Mobile first</span></div>
+        <div class="links"><a href="https://entertainment-71888.web.app/Mobilegames/index.html">View live page</a></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="windows">
+    <h3 class="label">Window washing</h3>
+    <div class="split">
+      <div>
+        <p>Now taking my first window-washing customers. I clean ground-level and low-rise glass, not high-rise, and I keep my gear and routes simple so jobs start on time.</p>
+        <p>Send me the address and a rough idea of the size, and I will get back to you with an estimate.</p>
+      </div>
+      <div class="services">
+        <div class="svc"><h4>Storefronts</h4><p>Front glass and entry windows.</p></div>
+        <div class="svc"><h4>Restaurants</h4><p>Dining room and front windows.</p></div>
+        <div class="svc"><h4>Strip malls</h4><p>Multiple units in one visit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <h3 class="label">Music by DJ Werewolf</h3>
+    <h4 class="sub">Albums</h4>
+    <div class="music">
+      <a class="rel" href="https://ditto.fm/heartland-trophies-vol-1"><b>Heartland Trophies Vol. 1</b><span>Album · 12 tracks · Listen on your platform</span></a>
+      <a class="rel" href="https://ditto.fm/rust-and-redline"><b>Rust &amp; Redline</b><span>Album · 12 tracks · Listen on your platform</span></a>
+    </div>
+    <h4 class="sub">Singles and releases</h4>
+    <div class="music">
+      <a class="rel" href="https://ditto.fm/not-a-fantasy"><b>Not A Fantasy</b><span>Single · Listen on your platform</span></a>
+      <a class="rel" href="https://ditto.fm/sweet-like-a-chic-a-cherry-cola"><b>Sweet Like a Chic-A-Cherry Cola</b><span>Single · Listen on your platform</span></a>
+      <a class="rel" href="https://ditto.fm/funky-slap-dance"><b>Funky Slap Dance</b><span>Single · Listen on your platform</span></a>
+      <a class="rel" href="https://ditto.fm/take-me-back-dj-werewolf"><b>Take Me Back</b><span>Single · Listen on your platform</span></a>
+      <a class="rel" href="https://ditto.fm/nothing-bundt-cakes"><b>Nothing Bundt Cakes</b><span>4 mixes · Listen on your platform</span></a>
+    </div>
+    <p style="margin-top:16px">Each link lets you pick your own streaming service.</p>
+  </section>
+
+  <section id="contact">
+    <h3 class="label">Get in touch</h3>
+    <div class="contact">
+      <div class="cinfo">
+        <p><b>Request a quote or ask about a project.</b></p>
+        <p><a id="email" href="mailto:raykevin71888@proton.me">raykevin71888@proton.me</a></p>
+        <div class="cbtns">
+          <button type="button" id="save">Save contact</button>
+          <button type="button" id="copy" class="alt">Copy email</button>
+        </div>
+        <p class="note" id="note">Save contact adds KF Commercial Services to your phone or computer contacts.</p>
+      </div>
+      <div class="qrbox">
+        <div id="qr"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNjYiIGhlaWdodD0iMzY2IiBjbGFzcz0ic2Vnbm8iPjxnIHRyYW5zZm9ybT0ic2NhbGUoNikiPjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoNjF2NjFoLTYxeiIvPjxwYXRoIGNsYXNzPSJxcmxpbmUiIHN0cm9rZT0iIzAwMCIgZD0iTTIgMi41aDdtMSAwaDFtMSAwaDFtMSAwaDJtMSAwaDJtMiAwaDNtMiAwaDJtMSAwaDJtMSAwaDJtNCAwaDltMSAwaDJtMiAwaDdtLTU3IDFoMW01IDBoMW0xIDBoMW0yIDBoMm0zIDBoMW0xIDBoMW01IDBoMW0yIDBoMW0yIDBoMW0zIDBoMW0zIDBoM20yIDBoMW0zIDBoMW0yIDBoMW01IDBoMW0tNTcgMWgxbTEgMGgzbTEgMGgxbTMgMGgybTIgMGgxbTEgMGgzbTYgMGgxbTggMGgzbTEgMGgzbTIgMGgxbTIgMGgybTIgMGgxbTEgMGgzbTEgMGgxbS01NyAxaDFtMSAwaDNtMSAwaDFtMSAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDRtMyAwaDFtNSAwaDFtMiAwaDRtMSAwaDFtMiAwaDFtMSAwaDFtMyAwaDFtMiAwaDFtMSAwaDNtMSAwaDFtLTU3IDFoMW0xIDBoM20xIDBoMW01IDBoMW0xIDBoMW03IDBoMm0yIDBoOG00IDBoMW04IDBoMW0yIDBoMW0xIDBoM20xIDBoMW0tNTcgMWgxbTUgMGgxbTUgMGgxbTMgMGgxbTIgMGgxbTIgMGgybTIgMGgxbTMgMGgybTMgMGgxbTIgMGgybTIgMGgxbTMgMGgxbTMgMGgxbTUgMGgxbS01NyAxaDdtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDdtLTQ5IDFoMW00IDBoMW0yIDBoMm0zIDBoMW0yIDBoM20zIDBoMW0yIDBoM20yIDBoMW0xIDBoMW0yIDBoMm0zIDBoMW0tNDkgMWgxbTEgMGgybTEgMGgzbTEgMGgzbTIgMGgxbTUgMGgxbTEgMGgxbTIgMGg2bTYgMGgxbTIgMGgybTMgMGgybTMgMGgxbTIgMGgxbTEgMGgybS01NyAxaDFtMSAwaDNtMyAwaDFtMiAwaDFtMyAwaDJtMyAwaDFtMyAwaDFtMSAwaDVtMSAwaDFtMSAwaDRtMSAwaDFtMSAwaDNtMyAwaDJtMiAwaDFtLTUwIDFoMW0yIDBoMm0xIDBoMm0zIDBoMW0xIDBoNG0xIDBoM20xIDBoMW0xIDBoMm0zIDBoMm0zIDBoMW0xIDBoM20zIDBoMm0xIDBoMW0xIDBoMW0xIDBoMm0yIDBoMm0tNTcgMWgxbTEgMGgzbTQgMGgxbTEgMGgxbTEgMGgzbTggMGgybTEgMGgybTIgMGgybTIgMGgxbTEgMGgxbTUgMGgxbTIgMGgxbTQgMGgzbTEgMGgybS01NiAxaDJtMiAwaDNtMSAwaDFtMyAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDRtMiAwaDFtMiAwaDJtMSAwaDFtMiAwaDFtMyAwaDFtMSAwaDJtMiAwaDFtMyAwaDNtLTU1IDFoMW0xIDBoMW0xIDBoMW0xIDBoM20xIDBoMW0yIDBoMm00IDBoMW0zIDBoMm0xIDBoMW01IDBoMW0zIDBoMm0xIDBoMW0zIDBoMm00IDBoMW0xIDBoMW0zIDBoMW0tNTcgMWgxbTEgMGgzbTEgMGgzbTEgMGgybTQgMGgxbTEgMGgxbTUgMGgzbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgxbTMgMGgzbTggMGgxbTMgMGgxbS01MiAxaDJtMSAwaDFtNiAwaDFtMiAwaDJtMyAwaDFtMSAwaDJtMSAwaDJtMSAwaDFtMyAwaDJtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDRtMSAwaDVtMSAwaDVtLTU0IDFoMW0yIDBoMm0zIDBoMW03IDBoMW0xIDBoMW0yIDBoMW0xIDBoMW01IDBoMW0xIDBoMW0yIDBoMW0xIDBoMW0zIDBoNG00IDBoMW0xIDBoMW0tNTMgMWg0bTIgMGgxbTEgMGgzbTEgMGgzbTMgMGgxbTMgMGgxbTEgMGg1bTEgMGgxbTEgMGgybTEgMGgxbTIgMGgxbTEgMGgxbTMgMGgzbTEgMGgxbTEgMGg2bS01NyAxaDJtMSAwaDJtMSAwaDNtMSAwaDFtMSAwaDJtMSAwaDVtMSAwaDFtMiAwaDJtMSAwaDFtMyAwaDRtNSAwaDNtMyAwaDFtMSAwaDNtMiAwaDFtMSAwaDFtLTU2IDFoMm0yIDBoMW00IDBoM200IDBoMm0xIDBoMW0xIDBoM20xIDBoMm0xIDBoMW0xIDBoMm0xIDBoMW0xIDBoMm0xIDBoMm0xIDBoMW0yIDBoMm0xIDBoMW0xIDBoMm01IDBoMW0tNTUgMWg1bTEgMGgxbTEgMGgxbTIgMGgxbTYgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgxbTIgMGgzbTQgMGgxbTEgMGgxbTIgMGgybTIgMGg0bTEgMGgxbS01NSAxaDVtMiAwaDNtMiAwaDJtMSAwaDFtMSAwaDJtMSAwaDFtMSAwaDNtMSAwaDJtMSAwaDFtMSAwaDFtNCAwaDFtNCAwaDJtMSAwaDJtMSAwaDNtNCAwaDFtLTU1IDFoN20yIDBoMW0yIDBoNG0xIDBoMm02IDBoM20xIDBoMW0yIDBoNG0xIDBoMm0yIDBoMW0zIDBoMm0xIDBoMW0zIDBoNW0tNTcgMWgxbTEgMGgxbTYgMGgxbTMgMGgybTEgMGgzbTUgMGgxbTIgMGgxbTIgMGgybTIgMGgxbTEgMGgzbTMgMGgxbTIgMGgybTYgMGgxbTEgMGgybS01NCAxaDdtMSAwaDJtNCAwaDFtMyAwaDJtMSAwaDFtMSAwaDFtMiAwaDFtMSAwaDJtMiAwaDJtMSAwaDJtMiAwaDJtMSAwaDFtMiAwaDNtMyAwaDFtMSAwaDFtLTU3IDFoMm0xIDBoMW0xIDBoMW00IDBoMW0xIDBoM20zIDBoMm0yIDBoMm0xIDBoMW0yIDBoMW00IDBoMW00IDBoMW0xMCAwaDNtMiAwaDFtMSAwaDFtLTU3IDFoOW0xIDBoNG00IDBoMW0zIDBoOW0xIDBoMm0xIDBoMm0xIDBoM20xIDBoNG0xIDBoNm0xIDBoMW0tNTUgMWgxbTMgMGgxbTMgMGgxbTQgMGgxbTYgMGgybTIgMGgzbTMgMGg0bTIgMGgxbTIgMGgybTEgMGgxbTIgMGgxbTIgMGgxbTMgMGgxbTEgMGgxbS01MyAxaDFtMSAwaDFtMSAwaDFtMSAwaDJtMyAwaDFtMSAwaDFtOCAwaDFtMSAwaDFtMSAwaDFtMSAwaDRtMSAwaDFtMSAwaDFtMyAwaDRtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDFtMSAwaDNtLTU1IDFoMW0xIDBoMW0zIDBoMW0xIDBoMW0yIDBoM20xIDBoMm0xIDBoM20zIDBoMW0zIDBoMW0zIDBoMW00IDBoMW0xIDBoMW0yIDBoM20xIDBoMW0zIDBoMm0xIDBoMW0tNTYgMWgxbTEgMGg4bTMgMGgzbTEgMGgxbTQgMGgybTEgMGg3bTQgMGgxbTEgMGgxbTMgMGgxbTIgMGgxbTEgMGg2bTEgMGgybS01NiAxaDNtMiAwaDFtMSAwaDNtMiAwaDJtNCAwaDFtMyAwaDRtMyAwaDFtMyAwaDNtMSAwaDJtNCAwaDJtMiAwaDJtMiAwaDJtLTUyIDFoMm0xIDBoM20xIDBoMm0xIDBoMm0xIDBoNG0xIDBoM20xIDBoMW0xIDBoMW0xIDBoMW03IDBoMm0xIDBoM200IDBoMm0xIDBoM20xIDBoMW0yIDBoMm0tNTcgMWgybTMgMGgxbTIgMGgzbTEgMGgybTIgMGgybTMgMGgybTEgMGgxbTQgMGgxbTEgMGgzbTMgMGgxbTIgMGgxbTEgMGgxbTEgMGgxbTMgMGgzbTIgMGgxbTEgMGgybS01MyAxaDRtNCAwaDJtMSAwaDNtMSAwaDFtMiAwaDFtMiAwaDNtMyAwaDRtMSAwaDFtMyAwaDJtMSAwaDFtMSAwaDJtMiAwaDNtLTUwIDFoNG0xIDBoM201IDBoMW0xIDBoMW03IDBoNG0xIDBoM20xIDBoM20xIDBoMW0xIDBoMW0yIDBoNm00IDBoMW0xIDBoMW0tNTYgMWgybTMgMGg1bTIgMGg0bTIgMGgxbTEgMGg0bTMgMGgxbTIgMGgybTIgMGgxbTEgMGgzbTQgMGgxbTIgMGgxbTEgMGgzbTEgMGgxbTEgMGgxbS01MiAxaDJtMiAwaDNtMSAwaDFtOCAwaDNtNCAwaDJtMiAwaDNtMiAwaDRtMyAwaDFtNCAwaDNtMyAwaDJtLTU1IDFoMW00IDBoMm0yIDBoNW0yIDBoMW0xIDBoM20zIDBoMW0zIDBoMW0xIDBoMW00IDBoMW00IDBoMW01IDBoMW0xIDBoMW0xIDBoMm0xIDBoMW0tNTUgMWgybTEgMGgzbTIgMGgzbTEgMGgxbTEgMGgzbTEgMGgxbTEgMGgxbTEgMGgxbTEgMGgzbTEgMGgxbTMgMGgybTMgMGgzbTEgMGgybTMgMGgzbTUgMGgzbS01NyAxaDFtMSAwaDFtMSAwaDFtMSAwaDJtMiAwaDFtMiAwaDRtMyAwaDJtMSAwaDNtMSAwaDJtMSAwaDZtMyAwaDJtMSAwaDFtMSAwaDJtMSAwaDFtNCAwaDRtLTU2IDFoMW0xIDBoMm0xIDBoMW02IDBoNW0xIDBoM20yIDBoMW0xIDBoMW0yIDBoMW0xIDBoNW0xIDBoMW0xIDBoMW02IDBoOW0xIDBoMW0tNTUgMWg2bTEgMGg1bTMgMGgybTMgMGgxbTEgMGgxbTEgMGgxbTIgMGgxbTEgMGgxbTIgMGgybTEgMGgxbTMgMGgybTEgMGgzbTEgMGgzbTIgMGgzbS01NCAxaDFtNiAwaDFtMiAwaDFtMyAwaDJtMSAwaDFtMSAwaDRtMyAwaDFtMiAwaDNtMSAwaDNtMSAwaDJtMSAwaDJtMSAwaDFtMSAwaDVtMSAwaDFtMiAwaDJtLTU1IDFoMW0yIDBoNW0xIDBoMW0xIDBoMW0yIDBoMm0xIDBoMW0xIDBoMW0xIDBoMm02IDBoMW0xIDBoM20yIDBoNG0xIDBoMW01IDBoMm0xIDBoMW0zIDBoMW0tNTYgMWgxbTUgMGgxbTIgMGgzbTEgMGgxbTQgMGgxbTIgMGgzbTEgMGgxbTIgMGgzbTMgMGgybTQgMGgzbTMgMGgxbTEgMGgxbTUgMGgxbS01NiAxaDFtMSAwaDFtMiAwaDJtMSAwaDVtMiAwaDFtMiAwaDJtMiAwaDFtMiAwaDFtMiAwaDJtMiAwaDFtMSAwaDFtMSAwaDFtMiAwaDFtMSAwaDNtMSAwaDFtMSAwaDFtMSAwaDhtLTU3IDFoNW00IDBoMm0yIDBoMW05IDBoMW0xIDBoMW0xIDBoMW0xIDBoMW0xIDBoM20xIDBoMm0xIDBoMW0yIDBoM20xIDBoMm0xIDBoNm0xIDBoMm0tNTEgMWgybTIgMGgxbTMgMGgzbTMgMGgxbTEgMGgybTEgMGg3bTEgMGgybTEgMGgzbTQgMGgxbTEgMGgxbTIgMGg1bTEgMGgxbTEgMGgxbS00OSAxaDNtMSAwaDJtMSAwaDNtMSAwaDNtMSAwaDFtMiAwaDFtMyAwaDJtMSAwaDZtMSAwaDFtNiAwaDJtMyAwaDFtMSAwaDFtMSAwaDFtLTU3IDFoN20xIDBoM20xIDBoMW02IDBoNm0xIDBoMW0xIDBoMW0xIDBoM20xIDBoNm02IDBoM20xIDBoMW0xIDBoMW0yIDBoMW0tNTYgMWgxbTUgMGgxbTEgMGgybTEgMGgxbTIgMGgxbTIgMGgxbTIgMGgxbTUgMGgxbTMgMGgxbTEgMGg2bTEgMGgxbTIgMGgxbTIgMGgybTEgMGgxbTMgMGg0bS01NiAxaDFtMSAwaDNtMSAwaDFtMyAwaDFtMSAwaDJtMiAwaDFtMSAwaDFtMiAwaDNtMSAwaDhtMSAwaDJtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDZtMSAwaDFtLTU2IDFoMW0xIDBoM20xIDBoMW0xIDBoNW0yIDBoMTBtMSAwaDJtMiAwaDFtMiAwaDNtMTAgMGgybTEgMGgybTQgMGgxbS01NiAxaDFtMSAwaDNtMSAwaDFtMSAwaDNtMiAwaDNtMiAwaDNtNSAwaDFtMiAwaDFtMiAwaDFtMyAwaDFtMSAwaDNtMSAwaDFtMSAwaDJtMSAwaDNtMyAwaDJtLTU1IDFoMW01IDBoMW0yIDBoMW0xIDBoM203IDBoMW0yIDBoMW0xIDBoMm02IDBoMm0yIDBoMW0yIDBoMW0xIDBoMW0zIDBoMW0xIDBoMm0xIDBoMW0zIDBoMW0tNTcgMWg3bTEgMGgxbTEgMGgxbTEgMGg2bTEgMGgybTYgMGgybTEgMGgxbTIgMGgzbTEgMGg2bTMgMGgybTEgMGgzIi8+PC9nPjwvc3ZnPgo=" width="176" height="176" alt="QR code that saves KF Commercial Services as a contact"></div>
+        <span>Scan to save contact</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">KF Commercial Services LLC, Gainesville, Florida. Websites, window washing, computers and music.</div>
+</footer>
+
+<script>
+(function () {
+  var EMAIL = 'raykevin71888@proton.me';
+  var card = [
+    'BEGIN:VCARD',
+    'VERSION:3.0',
+    'N:Ray;Kevin;;;',
+    'FN:Kevin Ray',
+    'ORG:KF Commercial Services',
+    'TITLE:Window washing, web design and music',
+    'EMAIL;TYPE=INTERNET,WORK:' + EMAIL,
+    'NOTE:Window washing, websites, stream overlays, computers and original music',
+    'END:VCARD'
+  ].join('
+');
+
+  var note = document.getElementById('note');
+  function say(t) { note.textContent = t; }
+
+
+  document.getElementById('save').addEventListener('click', function () {
+    try {
+      var blob = new Blob([card], { type: 'text/vcard;charset=utf-8' });
+      var url = URL.createObjectURL(blob);
+      var a = document.createElement('a');
+      a.href = url; a.download = 'KF-Commercial-Services.vcf';
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 4000);
+      say('If your device did not offer to add the contact, scan the QR code instead.');
+    } catch (e) { say('Saving did not work here. Scan the QR code instead.'); }
+  });
+
+  var btn = document.getElementById('copy');
+  btn.addEventListener('click', function () {
+    try {
+      navigator.clipboard.writeText(EMAIL).then(function () {
+        btn.textContent = 'Copied';
+        setTimeout(function () { btn.textContent = 'Copy email'; }, 1800);
+      }, function () { btn.textContent = 'Copy failed'; });
+    } catch (e) { btn.textContent = 'Copy failed'; }
+  });
+})();
+</script>
+</body>
+</html>
